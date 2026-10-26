@@ -102,6 +102,12 @@ h1 {
     margin: 1rem 0 0;
     color: var(--color-text-green);
 }
+
+/* page titles, same size as experience. home name stays big */
+hgroup h1 {
+    font-size: 4rem;
+}
+
 .meta-data {
     font-size: 0.75rem;
     text-transform: uppercase;
@@ -1338,6 +1344,7 @@ tool-tag {
         display: block;
     }
 
+    hgroup h1,
     .experience-page h1 {
         font-size: 3rem;
     }
