@@ -8,29 +8,22 @@
       content="An overview of Christine's current hobbies and interests."
     />
     <link rel="icon" href="../favicon.svg" />
+    <link rel="stylesheet" href="../style.css">
     <title>Christine Le | Food & Drink Map</title>
     <script src="../js/analytics.js" defer></script>
-    <style>
-      header,
-      main,
-      section,
-      article,
-      footer {
-        border: 1px solid black;
-      }
-    </style>
   </head>
   <body>
-    <header>
+    <header class="nav">
       <a href="../index.html">Christine Le</a>
       <nav>
-        <ul>
+        <ul class="header-links">
           <li><a href="../projects.html">Projects</a></li>
           <li><a href="../experience.html">Experience</a></li>
           <li><a href="../about.html">About</a></li>
           <li><a href="../contact.html">Contact</a></li>
           <li>
             <a
+              class="resume-link"
               href="../files/Christine_Le_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
@@ -40,7 +33,7 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="food-page">
       <noscript>
         <p>
           Javascript is currently disabled, so analytics won't run, but
@@ -48,80 +41,84 @@
         </p>
       </noscript>
 
-      <a href="./hobbies.html">
+      <a class="back-link" href="./hobbies.html">
         <span aria-hidden="true">&larr;</span> Hobbies</a
       >
 
       <hgroup>
-        <p>San Diego · 5 spots</p>
+        <p class="meta-data">San Diego · 5 spots</p>
         <h1>Food & Drink map</h1>
       </hgroup>
-      <p>short paragraph desc under title</p>
+      <p class="food-intro">short paragraph desc under title</p>
 
-      <p id="food-filter">Filter</p>
-      <div role="group" aria-labelledby="food-filter">
-        <button type="button" aria-pressed="true">All</button>
-        <button type="button" aria-pressed="false">Coffee</button>
-        <button type="button" aria-pressed="false">Boba</button>
-        <button type="button" aria-pressed="false">Eats</button>
-        <button type="button" aria-pressed="false">Desserts</button>
+      <div class="filter-row">
+        <p id="food-filter" class="label">Filter</p>
+        <div role="group" aria-labelledby="food-filter">
+          <button type="button" class="selected" aria-pressed="true">All</button>
+          <button type="button" aria-pressed="false">Coffee</button>
+          <button type="button" aria-pressed="false">Boba</button>
+          <button type="button" aria-pressed="false">Eats</button>
+          <button type="button" aria-pressed="false">Desserts</button>
+        </div>
       </div>
 
-      <iframe
-        src="https://www.google.com/maps/d/u/0/embed?mid=18zEipnYEa5juQH65ZODKguQ8gQBVmUU&ehbc=2E312F"
-        width="640"
-        height="480"
-        title="SD Food & Drink map"
-        loading="lazy"
-      ></iframe>
+      <div class="map-layout">
+        <iframe
+          src="https://www.google.com/maps/d/u/0/embed?mid=18zEipnYEa5juQH65ZODKguQ8gQBVmUU&ehbc=2E312F"
+          width="640"
+          height="480"
+          title="SD Food & Drink map"
+          loading="lazy"
+        ></iframe>
 
-      <ol class="spot-list">
-        <li>
-          <h2>Spot name</h2>
-          <ul class="spot-tags">
-            <li>Coffee</li>
-            <li>Area</li>
-          </ul>
-          <p>short desc of the spot and my order</p>
-        </li>
-        <li>
-          <h2>Spot name</h2>
-          <ul class="spot-tags">
-            <li>Boba</li>
-            <li>Area</li>
-          </ul>
-          <p>short desc of the spot and my order</p>
-        </li>
-        <li>
-          <h2>Spot name</h2>
-          <ul class="spot-tags">
-            <li>Eats</li>
-            <li>Area</li>
-          </ul>
-          <p>short desc of the spot and my order</p>
-        </li>
-        <li>
-          <h2>Spot name</h2>
-          <ul class="spot-tags">
-            <li>Eats</li>
-            <li>Area</li>
-          </ul>
-          <p>short desc of the spot and my order</p>
-        </li>
-        <li>
-          <h2>Spot name</h2>
-          <ul class="spot-tags">
-            <li>Desserts</li>
-            <li>Area</li>
-          </ul>
-          <p>short desc of the spot and my order</p>
-        </li>
-      </ol>
+        <ol class="spot-list">
+          <li>
+            <h2>Spot name</h2>
+            <ul class="spot-tags">
+              <li>Coffee</li>
+              <li>Area</li>
+            </ul>
+            <p>short desc of the spot and my order</p>
+          </li>
+          <li>
+            <h2>Spot name</h2>
+            <ul class="spot-tags">
+              <li>Boba</li>
+              <li>Area</li>
+            </ul>
+            <p>short desc of the spot and my order</p>
+          </li>
+          <li>
+            <h2>Spot name</h2>
+            <ul class="spot-tags">
+              <li>Eats</li>
+              <li>Area</li>
+            </ul>
+            <p>short desc of the spot and my order</p>
+          </li>
+          <li>
+            <h2>Spot name</h2>
+            <ul class="spot-tags">
+              <li>Eats</li>
+              <li>Area</li>
+            </ul>
+            <p>short desc of the spot and my order</p>
+          </li>
+          <li>
+            <h2>Spot name</h2>
+            <ul class="spot-tags">
+              <li>Desserts</li>
+              <li>Area</li>
+            </ul>
+            <p>short desc of the spot and my order</p>
+          </li>
+        </ol>
+      </div>
 
       <aside class="spot-rec">
         <p>Have a rec for me?</p>
         <p>I'm open to anything!</p>
-        <a href="../contact.html">Send a spot!</a>
+        <a class="button-filled" href="../contact.html">Send a spot!</a>
       </aside>
     </main>
     <footer>

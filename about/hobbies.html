@@ -8,29 +8,23 @@
       content="An overview of Christine's current hobbies and interests."
     />
     <link rel="icon" href="../favicon.svg" />
+    <link rel="stylesheet" href="../style.css">
     <title>Christine Le | Hobbies</title>
     <script src="../js/analytics.js" defer></script>
-    <style>
-      header,
-      main,
-      section,
-      article,
-      footer {
-        border: 1px solid black;
-      }
-    </style>
+
   </head>
   <body>
-    <header>
+    <header class="nav">
       <a href="../index.html">Christine Le</a>
       <nav>
-        <ul>
+        <ul class="header-links">
           <li><a href="../projects.html">Projects</a></li>
           <li><a href="../experience.html">Experience</a></li>
           <li><a href="../about.html">About</a></li>
           <li><a href="../contact.html">Contact</a></li>
           <li>
             <a
+              class="resume-link"
               href="../files/Christine_Le_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
@@ -41,7 +35,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="hobbies-page">
       <noscript>
         <p>
           Javascript is currently disabled, so analytics won't run, but
@@ -49,17 +43,17 @@
         </p>
       </noscript>
 
-      <a href="../about.html"><span aria-hidden="true">&larr;</span> About</a>
+      <a class="back-link" href="../about.html"><span aria-hidden="true">&larr;</span> About</a>
 
       <hgroup>
-        <p>Off the clock</p>
+        <p class="meta-data">Off the clock</p>
         <h1>Hobbies & Interests</h1>
       </hgroup>
-      <p>intro paragraph describing me/my hobbies</p>
+      <p class="hobbies-intro">intro paragraph describing me/my hobbies</p>
 
-      <section>
+      <section class="hobby" id="climbing">
         <hgroup>
-          <p>(01)</p>
+          <p class="label">(01)</p>
           <h2>Climbing</h2>
         </hgroup>
         <div class="hobby-context">
@@ -93,9 +87,9 @@
         </picture>
       </section>
 
-      <section>
+      <section class="hobby" id="snowboarding">
         <hgroup>
-          <p>(02)</p>
+          <p class="label">(02)</p>
           <h2>Snowboarding</h2>
         </hgroup>
         <div class="hobby-context">
@@ -120,16 +114,16 @@
         </picture>
       </section>
 
-      <section>
+      <section class="hobby">
         <hgroup>
-          <p>(03)</p>
+          <p class="label">(03)</p>
           <h2>Finding new food & drink spots</h2>
         </hgroup>
         <div class="hobby-context">
           <p>description describing food and drinks</p>
 
           <p>
-            <a href="food-map.html"
+            <a class="button-filled" href="food-map.html"
               >Open my food map <span aria-hidden="true">&rarr;</span></a
             >
           </p>

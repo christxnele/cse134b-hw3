@@ -8,37 +8,22 @@
       content="An overview of Christine's project, Piggy.ai."
     />
     <link rel="icon" href="../favicon.svg" />
+    <link rel="stylesheet" href="../style.css">
     <title>Christine Le | Piggy.ai</title>
     <script src="../js/analytics.js" defer></script>
-    <style>
-      tool-tag {
-        border: 2px solid #6b6b6b;
-        border-radius: 99px;
-        padding: 0.15em 0.75em;
-        margin: 0.1em;
-        display: inline-block;
-      }
-
-      header,
-      main,
-      section,
-      article,
-      footer {
-        border: 1px solid black;
-      }
-    </style>
   </head>
   <body>
-    <header>
+    <header class="nav">
       <a href="../index.html">Christine Le</a>
       <nav>
-        <ul>
-          <li><a href="../projects.html" aria-current="page">Projects</a></li>
+        <ul class="header-links">
+          <li><a href="../projects.html" class="active" aria-current="page">Projects</a></li>
           <li><a href="../experience.html">Experience</a></li>
           <li><a href="../about.html">About</a></li>
           <li><a href="../contact.html">Contact</a></li>
           <li>
             <a
+              class="resume-link"
               href="../files/Christine_Le_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
@@ -49,7 +34,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="project-detail">
       <noscript>
         <p>
           Javascript is currently disabled, so analytics won't run, but
@@ -57,7 +42,7 @@
         </p>
       </noscript>
 
-      <a href="../projects.html"
+      <a class="back-link" href="../projects.html"
         ><span aria-hidden="true">&larr;</span> All Projects</a
       >
       <hgroup>
@@ -78,6 +63,7 @@
         <li><a href="https://devpost.com/software/piggy-ai" target="_blank" rel="noopener noreferrer">Devpost <span aria-hidden="true">↗ </span></a></li>
       </ul>
 
+      <div class="proj-body">
         <div class="proj-media">
             <figure><iframe width="560" height="315" src="https://www.youtube.com/embed/8bYfnF-SW1s?si=etSywdNcK4azmVsC" title="Piggy.ai demo video"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" loading="lazy" allowfullscreen></iframe></figure>
             <p>Built with</p>
@@ -113,8 +99,9 @@
                 <p><strong>3rd Place Overall at DiamondHacks 2026</strong></p>
             </aside>    
         </div>
-        
-        <nav aria-label="More projects">
+      </div>
+
+      <nav class="more-projects">
             <a href="decidr.html">
                 <p>Next <span aria-hidden="true"> &rarr;</span></p>
                 <p>Decidr</p>

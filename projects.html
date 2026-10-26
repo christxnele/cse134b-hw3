@@ -8,37 +8,22 @@
       content="A list of Christine's most recent projects and her contributions."
     />
     <link rel="icon" href="favicon.svg" />
+    <link rel="stylesheet" href="style.css">
     <title>Christine Le | Projects</title>
     <script src="js/analytics.js" defer></script>
-    <style>
-      tool-tag {
-        border: 2px solid #6b6b6b;
-        border-radius: 99px;
-        padding: 0.15em 0.75em;
-        margin: 0.1em;
-        display: inline-block;
-      }
-
-      header,
-      main,
-      section,
-      article,
-      footer {
-        border: 1px solid black;
-      }
-    </style>
   </head>
   <body>
-    <header>
+    <header class="nav">
       <a href="index.html">Christine Le</a>
       <nav>
-        <ul>
-          <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <ul class="header-links">
+          <li><a href="projects.html" class="active" aria-current="page">Projects</a></li>
           <li><a href="experience.html">Experience</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li>
             <a
+              class="resume-link"
               href="files/Christine_Le_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
@@ -48,7 +33,7 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="projects-page">
       <noscript>
         <p>
           Javascript is currently disabled, so analytics won't run, but
@@ -56,84 +41,86 @@
         </p>
       </noscript>
       <hgroup>
-        <p>Things I've built</p>
+        <p class="meta-data">Things I've built</p>
         <h1>Projects</h1>
       </hgroup>
-      <p>Quick Description under Proj Header</p>
-      <search>
-        <p id="filter">Filter by tech</p>
+      <p class="page-intro">Quick Description under Proj Header</p>
+      <search class="filter-row">
+        <p id="filter" class="label">Filter by tech</p>
         <div role="group" aria-labelledby="filter">
-          <button type="button" aria-pressed="true">All</button>
+          <button type="button" class="selected" aria-pressed="true">All</button>
           <button type="button" aria-pressed="false">Tag</button>
           <button type="button" aria-pressed="false">Tag</button>
           <button type="button" aria-pressed="false">Tag</button>
         </div>
       </search>
 
-      <article class="proj-card">
-        <picture>
-          <source srcset="media/placeholder-image.webp" type="image/webp" />
-          <img
-            src="media/placeholder-image.jpg"
-            alt="temporary image for project1"
-            width="75"
-            height="75"
-          />
-        </picture>
-        <p class="proj-meta-line">
-          <span>(01)</span>
-          <span>DiamondHacks · <time datetime="2026-05">May 2026</time></span>
-        </p>
-        <h2>Piggy.ai</h2>
-        <p class="proj-desc">
-          Project description - Lorem ipsum dolor sit amet consectetur,
-          adipisicing elit. Ratione eum debitis laudantium, tempore perspiciatis
-          ipsam?
-        </p>
-        <ul class="proj-tags">
-          <li><tool-tag>tag1</tool-tag></li>
-          <li><tool-tag>tag1</tool-tag></li>
-          <li><tool-tag>tag1</tool-tag></li>
-        </ul>
-        <p class="proj-view-link">
-          <a href="projects/piggy.html"
-            >View Piggy.ai <span aria-hidden="true">&rarr;</span></a
-          >
-        </p>
-      </article>
-      <article class="proj-card">
-        <picture>
-          <source srcset="media/placeholder-image.webp" type="image/webp" />
-          <img
-            src="media/placeholder-image.jpg"
-            alt="temporary image for project2"
-            width="75"
-            height="75"
-          />
-        </picture>
-        <p class="proj-meta-line">
-          <span>(02)</span>
-          <span
-            >ACM Projects · <time datetime="2025-12">December 2025</time></span
-          >
-        </p>
-        <h2>Decidr</h2>
-        <p class="proj-desc">
-          Project description - Lorem ipsum dolor sit amet consectetur,
-          adipisicing elit. Ratione eum debitis laudantium, tempore perspiciatis
-          ipsam?
-        </p>
-        <ul class="proj-tags">
-          <li><tool-tag>tag1</tool-tag></li>
-          <li><tool-tag>tag1</tool-tag></li>
-          <li><tool-tag>tag1</tool-tag></li>
-        </ul>
-        <p class="proj-view-link">
-          <a href="projects/decidr.html"
-            >View Decidr <span aria-hidden="true">&rarr;</span></a
-          >
-        </p>
-      </article>
+      <div class="proj-grid">
+        <article class="proj-card">
+          <picture>
+            <source srcset="media/placeholder-image.webp" type="image/webp" />
+            <img
+              src="media/placeholder-image.jpg"
+              alt="temporary image for project1"
+              width="75"
+              height="75"
+            />
+          </picture>
+          <p class="proj-meta-line">
+            <span>(01)</span>
+            <span>DiamondHacks · <time datetime="2026-05">May 2026</time></span>
+          </p>
+          <h2>Piggy.ai</h2>
+          <p class="proj-desc">
+            Project description - Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Ratione eum debitis laudantium, tempore perspiciatis
+            ipsam?
+          </p>
+          <ul class="proj-tags">
+            <li><tool-tag>tag1</tool-tag></li>
+            <li><tool-tag>tag1</tool-tag></li>
+            <li><tool-tag>tag1</tool-tag></li>
+          </ul>
+          <p class="proj-view-link">
+            <a href="projects/piggy.html"
+              >View Piggy.ai <span aria-hidden="true">&rarr;</span></a
+            >
+          </p>
+        </article>
+        <article class="proj-card">
+          <picture>
+            <source srcset="media/placeholder-image.webp" type="image/webp" />
+            <img
+              src="media/placeholder-image.jpg"
+              alt="temporary image for project2"
+              width="75"
+              height="75"
+            />
+          </picture>
+          <p class="proj-meta-line">
+            <span>(02)</span>
+            <span
+              >ACM Projects · <time datetime="2025-12">December 2025</time></span
+            >
+          </p>
+          <h2>Decidr</h2>
+          <p class="proj-desc">
+            Project description - Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Ratione eum debitis laudantium, tempore perspiciatis
+            ipsam?
+          </p>
+          <ul class="proj-tags">
+            <li><tool-tag>tag1</tool-tag></li>
+            <li><tool-tag>tag1</tool-tag></li>
+            <li><tool-tag>tag1</tool-tag></li>
+          </ul>
+          <p class="proj-view-link">
+            <a href="projects/decidr.html"
+              >View Decidr <span aria-hidden="true">&rarr;</span></a
+            >
+          </p>
+        </article>
+      </div>
     </main>
     <footer>
       <ul>

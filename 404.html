@@ -8,29 +8,22 @@
       content="This page could not be found."
     />
     <link rel="icon" href="/favicon.svg" />
+    <link rel="stylesheet" href="/style.css">
     <title>Christine Le | Page Not Found</title>
     <script src="/js/analytics.js" defer></script>
-    <style>
-      header,
-      main,
-      section,
-      article,
-      footer {
-        border: 1px solid black;
-      }
-    </style>
   </head>
   <body>
-    <header>
+    <header class="nav">
       <a href="/index.html">Christine Le</a>
       <nav>
-        <ul>
+        <ul class="header-links">
           <li><a href="/projects.html">Projects</a></li>
           <li><a href="/experience.html">Experience</a></li>
           <li><a href="/about.html">About</a></li>
           <li><a href="/contact.html">Contact</a></li>
           <li>
             <a
+              class="resume-link"
               href="/files/Christine_Le_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
@@ -40,9 +33,9 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="not-found">
       <hgroup>
-        <p>Error 404</p>
+        <p class="meta-data">Error 404</p>
         <h1>Page not found</h1>
       </hgroup>
       <p>
@@ -50,7 +43,7 @@
         moved.
       </p>
       <img src="/media/sad-hamster.png" width="150" height="150" alt="sad crying hamster">
-      <p><a href="/index.html">Back to home</a></p>
+      <p><a class="button-filled" href="/index.html">Back to home</a></p>
     </main>
     <footer>
       <ul>

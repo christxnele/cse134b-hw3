@@ -8,37 +8,22 @@
       content="A list of Christine's work experiences and involvement in the UCSD community."
     />
     <link rel="icon" href="favicon.svg" />
+    <link rel="stylesheet" href="style.css">
     <title>Christine Le | Experience</title>
     <script src="js/analytics.js" defer></script>
-    <style>
-      tool-tag {
-        border: 2px solid #6b6b6b;
-        border-radius: 99px;
-        padding: 0.15em 0.75em;
-        margin: 0.1em;
-        display: inline-block;
-      }
-
-      header,
-      main,
-      section,
-      article,
-      footer {
-        border: 1px solid black;
-      }
-    </style>
   </head>
   <body>
-    <header>
+    <header class="nav">
       <a href="index.html">Christine Le</a>
       <nav>
-        <ul>
+        <ul class="header-links">
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="experience.html" aria-current="page">Experience</a></li>
+          <li><a href="experience.html" class="active" aria-current="page">Experience</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li>
             <a
+              class="resume-link"
               href="files/Christine_Le_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
@@ -49,7 +34,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="experience-page">
       <noscript>
         <p>
           Javascript is currently disabled, so analytics won't run, but
@@ -63,13 +48,13 @@
         <article>
           <header>
             <h3>Web Development Intern</h3>
-            <p>Data Science Alliance</p>
-            <p>
+            <p class="company">Data Science Alliance</p>
+            <p class="dates">
               <time datetime="2026-06">June 2026</time>
               <span role="img" aria-label="to">&rarr;</span>
               <time datetime="2026-09">Sept 2026</time>
             </p>
-            <p>San Diego, CA</p>
+            <p class="location">San Diego, CA</p>
           </header>
 
           <p>
@@ -94,8 +79,8 @@
               fast, reliable route generation every planning day.
             </li>
           </ul>
-          <p>Tools</p>
-          <ul>
+          <p class="label">Tools</p>
+          <ul class="tool-list">
             <li><tool-tag>React</tool-tag></li>
             <li><tool-tag>Vite</tool-tag></li>
             <li><tool-tag>Supabase</tool-tag></li>
@@ -104,17 +89,17 @@
         <article>
           <header>
             <h3>Web Development Intern</h3>
-            <p>
+            <p class="company">
               <a href="https://water-economics.com/water-rate-comparison-tool/"
                 >Water Resource Economics</a
               >
             </p>
-            <p>
+            <p class="dates">
               <time datetime="2026-07">July 2026</time>
               <span role="img" aria-label="to">&rarr;</span>
               <time datetime="2026-09">Sept 2026</time>
             </p>
-            <p>Remote</p>
+            <p class="location">Remote</p>
           </header>
 
           <p>
@@ -135,8 +120,8 @@
               Obcaecati, quia.
             </li>
           </ul>
-          <p>Tools</p>
-          <ul>
+          <p class="label">Tools</p>
+          <ul class="tool-list">
             <li><tool-tag>tool</tool-tag></li>
             <li><tool-tag>tool</tool-tag></li>
             <li><tool-tag>tool</tool-tag></li>
@@ -145,13 +130,13 @@
         <article>
           <header>
             <h3>Full Stack Developer Intern</h3>
-            <p>Nest Friends</p>
-            <p>
+            <p class="company">Nest Friends</p>
+            <p class="dates">
               <time datetime="2025-11">Nov 2025</time>
               <span role="img" aria-label="to">&rarr;</span>
               <time datetime="2026-02">Feb 2026</time>
             </p>
-            <p>Remote</p>
+            <p class="location">Remote</p>
           </header>
 
           <p>
@@ -172,8 +157,8 @@
               Obcaecati, quia.
             </li>
           </ul>
-          <p>Tools</p>
-          <ul>
+          <p class="label">Tools</p>
+          <ul class="tool-list">
             <li><tool-tag>tool</tool-tag></li>
             <li><tool-tag>tool</tool-tag></li>
             <li><tool-tag>tool</tool-tag></li>
@@ -186,12 +171,12 @@
         <article>
           <header>
             <h3>Hack (SWE) Lead</h3>
-            <p>ACM @ UCSD</p>
-            <p>
+            <p class="company">ACM @ UCSD</p>
+            <p class="dates">
               <time datetime="2026-05">May 2026</time>
               <span role="img" aria-label="to">&rarr;</span> Present
             </p>
-            <p>San Diego, CA</p>
+            <p class="location">San Diego, CA</p>
           </header>
 
           <p>
@@ -212,8 +197,8 @@
               Obcaecati, quia.
             </li>
           </ul>
-          <p>Tools</p>
-          <ul>
+          <p class="label">Tools</p>
+          <ul class="tool-list">
             <li><tool-tag>tool</tool-tag></li>
             <li><tool-tag>tool</tool-tag></li>
             <li><tool-tag>tool</tool-tag></li>

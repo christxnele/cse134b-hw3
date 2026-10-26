@@ -8,37 +8,22 @@
       content="An overview of Christine's project, Decidr."
     />
     <link rel="icon" href="../favicon.svg" />
+    <link rel="stylesheet" href="../style.css">
     <title>Christine Le | Decidr</title>
     <script src="../js/analytics.js" defer></script>
-    <style>
-      tool-tag {
-        border: 2px solid #6b6b6b;
-        border-radius: 99px;
-        padding: 0.15em 0.75em;
-        margin: 0.1em;
-        display: inline-block;
-      }
-
-      header,
-      main,
-      section,
-      article,
-      footer {
-        border: 1px solid black;
-      }
-    </style>
   </head>
   <body>
-    <header>
+    <header class="nav">
       <a href="../index.html">Christine Le</a>
       <nav>
-        <ul>
-          <li><a href="../projects.html" aria-current="page">Projects</a></li>
+        <ul class="header-links">
+          <li><a href="../projects.html" class="active" aria-current="page">Projects</a></li>
           <li><a href="../experience.html">Experience</a></li>
           <li><a href="../about.html">About</a></li>
           <li><a href="../contact.html">Contact</a></li>
           <li>
             <a
+              class="resume-link"
               href="../files/Christine_Le_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
@@ -49,7 +34,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="project-detail">
       <noscript>
         <p>
           Javascript is currently disabled, so analytics won't run, but
@@ -57,7 +42,7 @@
         </p>
       </noscript>
 
-      <a href="../projects.html"
+      <a class="back-link" href="../projects.html"
         ><span aria-hidden="true">&larr;</span> All Projects</a
       >
       <hgroup>
@@ -85,72 +70,75 @@
         </li>
       </ul>
 
-      <div class="proj-media">
-        <figure>
-          <img
-            src="../media/decidr/decidr-home-page.png"
-            width="301"
-            height="578"
-            alt="Decidr login screen"
-          />
-          <img
-            src="../media/decidr/decidr-map.png"
-            width="301"
-            height="578"
-            alt="Decidr screen showing map with user location"
-          />
-          <img
-            src="../media/decidr/decidr-profile.png"
-            width="301"
-            height="578"
-            alt="Decidr profile screen with recently visited restaurants"
-          />
-          <img
-            src="../media/decidr/decidr-rec-generator.png"
-            width="301"
-            height="578"
-            alt="Decidr recommendation screen with user preferences"
-          />
-        </figure>
-        <div role="group" class="screenshot-controls" aria-label="screenshot controls">
-          <button type="button" aria-label="Previous Screenshot">&larr;</button>
-          <button type="button" aria-label="Next Screenshot">&rarr;</button>
-        </div>
-        <p>Built with</p>
-        <ul class="proj-tags">
-          <li><tool-tag>tag</tool-tag></li>
-          <li><tool-tag>tag</tool-tag></li>
-          <li><tool-tag>tag</tool-tag></li>
-        </ul>
-      </div>
-
-      <div class="proj-context">
-        <dl>
-          <dt>My Role</dt>
-          <dd>Fullstack developer</dd>
-          <dt>Team</dt>
-          <dd>5 Members</dd>
-        </dl>
-        <section>
-          <h2>Overview</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ea,
-            odio nemo fugiat quidem ipsam vero, hic sequi corrupti aliquid
-            repellendus quia illo, quo sit?
-          </p>
-        </section>
-        <section>
-          <h2>What I did</h2>
-          <ul>
-            <li>bullet pt</li>
-            <li>bullet pt</li>
-            <li>bullet pt</li>
+      <div class="proj-body">
+        <div class="proj-media">
+          <figure>
+            <img
+              src="../media/decidr/decidr-home-page.png"
+              width="301"
+              height="578"
+              alt="Decidr login screen"
+            />
+            <img
+              src="../media/decidr/decidr-map.png"
+              width="301"
+              height="578"
+              alt="Decidr screen showing map with user location"
+            />
+            <img
+              src="../media/decidr/decidr-profile.png"
+              width="301"
+              height="578"
+              alt="Decidr profile screen with recently visited restaurants"
+            />
+            <img
+              src="../media/decidr/decidr-rec-generator.png"
+              width="301"
+              height="578"
+              alt="Decidr recommendation screen with user preferences"
+            />
+          </figure>
+          <div role="group" class="screenshot-controls" aria-label="screenshot controls">
+            <button type="button" aria-label="Previous Screenshot">&larr;</button>
+            <button type="button" aria-label="Next Screenshot">&rarr;</button>
+          </div>
+          <p>Built with</p>
+          <ul class="proj-tags">
+            <li><tool-tag>tag</tool-tag></li>
+            <li><tool-tag>tag</tool-tag></li>
+            <li><tool-tag>tag</tool-tag></li>
           </ul>
-        </section>
+        </div>
+
+        <div class="proj-context">
+          <dl>
+            <dt>My Role</dt>
+            <dd>Fullstack developer</dd>
+            <dt>Team</dt>
+            <dd>5 Members</dd>
+          </dl>
+          <section>
+            <h2>Overview</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ea,
+              odio nemo fugiat quidem ipsam vero, hic sequi corrupti aliquid
+              repellendus quia illo, quo sit?
+            </p>
+          </section>
+          <section>
+            <h2>What I did</h2>
+            <ul>
+              <li>bullet pt</li>
+              <li>bullet pt</li>
+              <li>bullet pt</li>
+            </ul>
+          </section>
+        </div>
+
       </div>
 
-      <nav aria-label="More projects">
-        <a href="piggy.html">
+      <nav class="more-projects">
+        <a class="proj-prev" href="piggy.html">
           <p><span aria-hidden="true"> &larr; Previous</span></p>
           <p>Piggy.ai</p>
         </a>
